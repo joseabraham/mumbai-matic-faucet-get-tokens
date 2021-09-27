@@ -21,3 +21,4 @@ WALLET_ADDRESS="XXXX"
 
 ## DISCLAIMER
 Please don't abuse this script, I use it to automate getting some MATIC tokens in Mumbai for testing purposes. 
+You can gt blocked by Polygon after a while and get 404 errors. 
