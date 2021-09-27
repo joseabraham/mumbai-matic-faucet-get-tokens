@@ -32,8 +32,8 @@ def callFaucet():
             if(respJson['error'] == 'Returned error: replacement transaction underpriced'):
                 success = False
             else:
-                success = True   
                 s.enter(50, 1, callFaucet) 
+                success = True                   
         except Exception as e:   
             success = False                     
             s.enter(50, 1, callFaucet)    
@@ -42,7 +42,7 @@ def callFaucet():
 def __main__():
     try:        
         print("STARTING FAUCET REQUEST")
-        s.enter(50, 1, callFaucet)
+        callFaucet()        
         s.run()
 
     except Exception as e:        
